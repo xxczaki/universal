@@ -1,0 +1,63 @@
+{
+	"name": "@node-fetch/universal",
+	"version": "1.0.0",
+	"description": "Universal node-fetch wrapper",
+	"main": "index.js",
+	"module": "esm.js",
+	"browser": "esm.js",
+	"sideEffects": false,
+	"exports": {
+		"import": "esm.js",
+		"require": "index.js"
+	},
+	"files": [
+		"index.js",
+		"esm.js",
+		"*.d.ts"
+	],
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/node-fetch/universal.git"
+	},
+	"keywords": [
+		"fetch",
+		"http",
+		"promise",
+		"node-fetch",
+		"universal",
+		"isomorphic",
+		"cross-fetch",
+		"isomorphic-fetch",
+		"browser-fetch"
+	],
+	"author": "Antoni Kepinski <a@kepinski.me> (https://kepinski.me)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/node-fetch/universal/issues"
+	},
+	"homepage": "https://github.com/node-fetch/universal",
+	"funding": {
+		"type": "opencollective",
+		"url": "https://opencollective.com/node-fetch"
+	},
+	"devDependencies": {
+		"ava": "^3.8.2",
+		"node-fetch": "^3.0.0-beta.5",
+		"xo": "^0.30.0"
+	},
+	"peerDependencies": {
+		"node-fetch": ">=3.0.0-beta.5"
+	},
+	"xo": {
+		"envs": [
+			"node",
+			"browser"
+		]
+	}
+}
